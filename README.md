@@ -1,26 +1,52 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Modern Business](http://startbootstrap.com/template-overviews/modern-business/)
+## 8月底-9月底开发计划
 
-[Modern Business](http://startbootstrap.com/template-overviews/modern-business/) is a multipurpose, full website template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template includes 17 unique HTML pages and a working PHP contact form.
+**时间安排：**
 
-## Getting Started
+`15.08.24-15.08.30`
+- **前台部分**
+单个话题页面实现（无数据、地图为热力图）
+单个政体页面实现（无数据）
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+- **后台部分**
+前端和服务器基本数据交换方式定义和实现
+单个话题页面相关算法、数据接口（无政体）
 
-## Bugs and Issues
+`15.08.31-15.09.06`
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-modern-business/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/modern-business/).
+- **前台部分**
+单个话题页面前端实现（含数据）
+政体列表页面实现（无数据）
 
-## Creator
+- **后台部分**
+单个政体页面数据接口（无对抗性合作性分析）
+单个话题页面数据接口（含政体）
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+`15.09.07-15.09.13`
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+- **前台部分**
+政体列表页面实现（有数据）
+搜索页面实现（无数据）
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+- **后台部分**
+政体列表页面数据接口
+搜索结果页面数据接口
 
-## Copyright and License
+`15.09.14-15.09.20`
 
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-modern-business/blob/gh-pages/LICENSE) license.
+- **前台部分**
+首页页面实现（无数据）
+搜索页面实现（有数据）
+
+- **后台部分**
+首页数据接口
+合作对抗性分析算法
+
+`15.09.21-15.09.31`
+
+- **前台部分**
+首页页面实现（有数据）
+补遗
+
+- **后台部分**
+合作对抗性分析算法及相关数据接口
+补遗
