@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>News Miner - a tool for analyzing</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <link href="css/logo.css" rel="stylesheet" type="text/css" />
+    <link href="css/user.css" rel="stylesheet" type="text/css" />
+    <link href="css/search.css" rel="stylesheet" type="text/css" />
+    <link href="css/panels.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="css/Myboxes.css" rel="stylesheet" type="text/css" />
+    <link href="css/buttons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/vertical_timeline_components.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/Mycarousel.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+	<script data-require-id="echarts/chart/line" src="./ECharts · Example_files/line.js" async=""></script>
+	<script data-require-id="echarts/chart/bar" src="./ECharts · Example_files/bar.js" async=""></script>
+	<script data-require-id="echarts/chart/scatter" src="./ECharts · Example_files/scatter.js" async=""></script>
+	<script data-require-id="echarts/chart/k" src="./ECharts · Example_files/k.js" async=""></script>
+	<script data-require-id="echarts/chart/pie" src="./ECharts · Example_files/pie.js" async=""></script>
+	<script data-require-id="echarts/chart/radar" src="./ECharts · Example_files/radar.js" async=""></script>
+	<script data-require-id="echarts/chart/force" src="./ECharts · Example_files/force.js" async=""></script>
+	<script data-require-id="echarts/chart/chord" src="./ECharts · Example_files/chord.js" async=""></script>
+	<script data-require-id="echarts/chart/gauge" src="./ECharts · Example_files/gauge.js" async=""></script>
+	<script data-require-id="echarts/chart/funnel" src="./ECharts · Example_files/funnel.js" async=""></script>
+	<script data-require-id="echarts/chart/eventRiver" src="./ECharts · Example_files/eventRiver.js" async=""></script>
+	<script data-require-id="echarts/chart/venn" src="./ECharts · Example_files/venn.js" async=""></script>
+	<script data-require-id="echarts/chart/treemap" src="./ECharts · Example_files/treemap.js" async=""></script>
+	<script data-require-id="echarts/chart/tree" src="./ECharts · Example_files/tree.js" async=""></script>
+	<script data-require-id="echarts/chart/wordCloud" src="./ECharts · Example_files/wordCloud.js" async=""></script>
+	<script data-require-id="echarts/chart/heatmap" src="./ECharts · Example_files/heatmap.js" async=""></script>
+	<script data-require-id="echarts/chart/map" src="./ECharts · Example_files/map.js" async=""></script>
+    
+	<!--script require  -->  
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">News Miner</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="search.html">Search</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+              <h1 class="page-header">Searching Page <small>search everything you want</small></h1>
+              <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Searching Page</li>
+              </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+		<div class="row">
+		  <div class="col-md-12">
+                <!-- Blog Search Well -->
+                <div class="well">
+                  <h4>Search here</h4>
+                  <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="search countries/regimes/topics">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                    <!-- /.input-group -->
+                </div>
+
+              <!-- Blog Categories Well -->
+                
+
+              <!-- Side Widget Well -->
+            </div>        
+        
+        </div>
+        
+        <div class="row">
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-7">
+              <h2> Tracking in time</h2>
+              <div class="row container-fluid">
+            	<div class="btn-group button_1">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Any time <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                  	<li><a href="#">Any time</a></li>
+                    <li><a href="#">Today</a></li>
+                    <li><a href="#">Yesterday</a></li>
+                    <li><a href="#">This Week</a></li>
+                    <li><a href="#">This Month</a></li>
+                    <li><a href="#">This Year</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group button_2">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Every Country <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                  	<li><a href="#">Every Country</a></li>
+                    <li><a href="#">China</a></li>
+                    <li><a href="#">America</a></li>
+                    <li><a href="#">This Week</a></li>
+                    <li><a href="#">This Month</a></li>
+                    <li><a href="#">This Year</a></li>
+                  </ul>
+                </div>
+                
+                <div class="btn-group button_3">
+                  <span style="color:inherit">Sort by</span>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Relevance <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                  	<li><a href="#">Relevance</a></li>
+                    <li><a href="#">Today</a></li>
+                    <li><a href="#">Yesterday</a></li>
+                    <li><a href="#">This Week</a></li>
+                    <li><a href="#">This Month</a></li>
+                    <li><a href="#">This Year</a></li>
+                  </ul>
+                  
+                </div>
+           	</div> 
+             
+            <div id="vertical_timeline">
+            	<ul class="cbp_tmtimeline">
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time>
+						<div class="cbp_tmicon cbp_tmicon-phone"></div>
+						<div class="cbp_tmlabel">
+							<a href="#"><h2>Ricebean black-eyed pea</h2></a>
+							<p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant. Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato summer purslane salsify fennel horseradish dulse. Winter purslane garbanzo artichoke broccoli lentil corn okra silver beet celery quandong. Plantain salad beetroot bunya nuts black-eyed pea collard greens radish water spinach gourd chicory prairie turnip avocado sierra leone bologi.</p>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>4/11/13</span> <span>12:04</span></time>
+						<div class="cbp_tmicon cbp_tmicon-screen"></div>
+						<div class="cbp_tmlabel">
+							<a href="#"><h2>Greens radish arugula</h2></a>
+							<p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.</p>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>4/13/13</span> <span>05:36</span></time>
+						<div class="cbp_tmicon cbp_tmicon-mail"></div>
+						<div class="cbp_tmlabel">
+							<a href="#"><h2>Sprout garlic kohlrabi</h2></a>
+							<p>Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.</p>
+						</div>
+					</li>
+				</ul>
+            </div>
+			<nav>
+              <ul class="pager">
+                <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+              </ul>
+            </nav>
+        </div>
+        
+		<div class="col-md-5">
+        <div class="panel panel-default related_regime_panel">   
+            <div class="panel-heading">
+                <h2>Related regimes</h2>
+            </div>
+            <div class="panel-body">
+                <div class="regime related_regime">
+                    <a href="#"><img src="images/China.png"></a>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">China</a></p>
+                </div>
+                <div class="regime reated_regime">
+                    <a href="#"><img src="images/America.png"></a>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">America</a></p>
+                </div>
+                <div class="regime reated_regime">
+                    <a href="#"><img src="images/England.png"></a>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">England</a></p>
+                </div>
+                <div class="regime reated_regime">
+                    <a href="#"><img src="images/India.png"></a>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">India</a></p>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+            <!-- Blog Sidebar Widgets Column -->
+            
+
+        </div>
+        
+        <div id="graphic" class="row">
+        	<h2> Tracking in map</h2>
+        	<div id="main" class="main" style="height: 530px; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; cursor: default; background-color: rgba(0, 0, 0, 0);border:1px #000000 solid ;">
+
+            	<div style="position: relative; overflow: hidden; width: 1194px; height: 508px;">
+
+                </div>
+                                 
+            </div>
+			<div>                
+            <button type="button" class="btn btn-sm btn-success" onclick="refresh(true)">刷 新</button>
+                    <span class="text-primary">切换主题</span>
+                    <select id="theme-select">
+                        <option selected="true" name="macarons">macarons</option>
+                        <option name="infographic">infographic</option>           
+                        <option name="default">default</option>
+                    
+                    </select>
+
+            <span id="wrong-message" style="color:red"></span></div>
+            
+        </div>
+        
+        
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2015 © NewsMiner.All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    
+    <!--baidu echarts-->
+	<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script data-require-id="theme/default" src="/js/theme/default.js" async=""></script>
+    <script data-require-id="theme/infographic" src="/js/theme/infographic.js" async=""></script>
+    <script data-require-id="theme/macarons" src="/js/theme/macarons.js" async=""></script>
+    
+    <script type="text/javascript">
+		//path
+		require.config({
+			paths:{
+				echarts:'http://echarts.baidu.com/build/dist'	
+				}
+			});
+		require(
+			[
+			'echarts',
+			'echarts/chart/map'
+			],
+			
+			function (ec){
+				var myChart = ec.init(document.getElementById('main')); 
+				//var option
+				option = {
+				tooltip : {
+					trigger: 'item',
+					formatter: '{b}'
+				},
+				series : [
+					{
+						name: '世界地图',
+						type: 'map',
+						mapType: 'world',
+						roam: true,
+						selectedMode : 'single',
+						itemStyle:{
+							normal:{label:{show:false}},
+							emphasis:{label:{show:true}}
+						},
+						data:[],
+						// 自定义名称
+						nameMap : {
+							'Afghanistan':'阿富汗',
+							'Angola':'安哥拉',
+							'Albania':'阿尔巴尼亚',
+							'United Arab Emirates':'阿联酋',
+							'Argentina':'阿根廷',
+							'Armenia':'亚美尼亚',
+							'French Southern and Antarctic Lands':'法属南半球和南极领地',
+							'Australia':'澳大利亚',
+							'Austria':'奥地利',
+							'Azerbaijan':'阿塞拜疆',
+							'Burundi':'布隆迪',
+							'Belgium':'比利时',
+							'Benin':'贝宁',
+							'Burkina Faso':'布基纳法索',
+							'Bangladesh':'孟加拉国',
+							'Bulgaria':'保加利亚',
+							'The Bahamas':'巴哈马',
+							'Bosnia and Herzegovina':'波斯尼亚和黑塞哥维那',
+							'Belarus':'白俄罗斯',
+							'Belize':'伯利兹',
+							'Bermuda':'百慕大',
+							'Bolivia':'玻利维亚',
+							'Brazil':'巴西',
+							'Brunei':'文莱',
+							'Bhutan':'不丹',
+							'Botswana':'博茨瓦纳',
+							'Central African Republic':'中非共和国',
+							'Canada':'加拿大',
+							'Switzerland':'瑞士',
+							'Chile':'智利',
+							'China':'中国',
+							'Ivory Coast':'象牙海岸',
+							'Cameroon':'喀麦隆',
+							'Democratic Republic of the Congo':'刚果民主共和国',
+							'Republic of the Congo':'刚果共和国',
+							'Colombia':'哥伦比亚',
+							'Costa Rica':'哥斯达黎加',
+							'Cuba':'古巴',
+							'Northern Cyprus':'北塞浦路斯',
+							'Cyprus':'塞浦路斯',
+							'Czech Republic':'捷克共和国',
+							'Germany':'德国',
+							'Djibouti':'吉布提',
+							'Denmark':'丹麦',
+							'Dominican Republic':'多明尼加共和国',
+							'Algeria':'阿尔及利亚',
+							'Ecuador':'厄瓜多尔',
+							'Egypt':'埃及',
+							'Eritrea':'厄立特里亚',
+							'Spain':'西班牙',
+							'Estonia':'爱沙尼亚',
+							'Ethiopia':'埃塞俄比亚',
+							'Finland':'芬兰',
+							'Fiji':'斐',
+							'Falkland Islands':'福克兰群岛',
+							'France':'法国',
+							'Gabon':'加蓬',
+							'United Kingdom':'英国',
+							'Georgia':'格鲁吉亚',
+							'Ghana':'加纳',
+							'Guinea':'几内亚',
+							'Gambia':'冈比亚',
+							'Guinea Bissau':'几内亚比绍',
+							'Equatorial Guinea':'赤道几内亚',
+							'Greece':'希腊',
+							'Greenland':'格陵兰',
+							'Guatemala':'危地马拉',
+							'French Guiana':'法属圭亚那',
+							'Guyana':'圭亚那',
+							'Honduras':'洪都拉斯',
+							'Croatia':'克罗地亚',
+							'Haiti':'海地',
+							'Hungary':'匈牙利',
+							'Indonesia':'印尼',
+							'India':'印度',
+							'Ireland':'爱尔兰',
+							'Iran':'伊朗',
+							'Iraq':'伊拉克',
+							'Iceland':'冰岛',
+							'Israel':'以色列',
+							'Italy':'意大利',
+							'Jamaica':'牙买加',
+							'Jordan':'约旦',
+							'Japan':'日本',
+							'Kazakhstan':'哈萨克斯坦',
+							'Kenya':'肯尼亚',
+							'Kyrgyzstan':'吉尔吉斯斯坦',
+							'Cambodia':'柬埔寨',
+							'South Korea':'韩国',
+							'Kosovo':'科索沃',
+							'Kuwait':'科威特',
+							'Laos':'老挝',
+							'Lebanon':'黎巴嫩',
+							'Liberia':'利比里亚',
+							'Libya':'利比亚',
+							'Sri Lanka':'斯里兰卡',
+							'Lesotho':'莱索托',
+							'Lithuania':'立陶宛',
+							'Luxembourg':'卢森堡',
+							'Latvia':'拉脱维亚',
+							'Morocco':'摩洛哥',
+							'Moldova':'摩尔多瓦',
+							'Madagascar':'马达加斯加',
+							'Mexico':'墨西哥',
+							'Macedonia':'马其顿',
+							'Mali':'马里',
+							'Myanmar':'缅甸',
+							'Montenegro':'黑山',
+							'Mongolia':'蒙古',
+							'Mozambique':'莫桑比克',
+							'Mauritania':'毛里塔尼亚',
+							'Malawi':'马拉维',
+							'Malaysia':'马来西亚',
+							'Namibia':'纳米比亚',
+							'New Caledonia':'新喀里多尼亚',
+							'Niger':'尼日尔',
+							'Nigeria':'尼日利亚',
+							'Nicaragua':'尼加拉瓜',
+							'Netherlands':'荷兰',
+							'Norway':'挪威',
+							'Nepal':'尼泊尔',
+							'New Zealand':'新西兰',
+							'Oman':'阿曼',
+							'Pakistan':'巴基斯坦',
+							'Panama':'巴拿马',
+							'Peru':'秘鲁',
+							'Philippines':'菲律宾',
+							'Papua New Guinea':'巴布亚新几内亚',
+							'Poland':'波兰',
+							'Puerto Rico':'波多黎各',
+							'North Korea':'北朝鲜',
+							'Portugal':'葡萄牙',
+							'Paraguay':'巴拉圭',
+							'Qatar':'卡塔尔',
+							'Romania':'罗马尼亚',
+							'Russia':'俄罗斯',
+							'Rwanda':'卢旺达',
+							'Western Sahara':'西撒哈拉',
+							'Saudi Arabia':'沙特阿拉伯',
+							'Sudan':'苏丹',
+							'South Sudan':'南苏丹',
+							'Senegal':'塞内加尔',
+							'Solomon Islands':'所罗门群岛',
+							'Sierra Leone':'塞拉利昂',
+							'El Salvador':'萨尔瓦多',
+							'Somaliland':'索马里兰',
+							'Somalia':'索马里',
+							'Republic of Serbia':'塞尔维亚共和国',
+							'Suriname':'苏里南',
+							'Slovakia':'斯洛伐克',
+							'Slovenia':'斯洛文尼亚',
+							'Sweden':'瑞典',
+							'Swaziland':'斯威士兰',
+							'Syria':'叙利亚',
+							'Chad':'乍得',
+							'Togo':'多哥',
+							'Thailand':'泰国',
+							'Tajikistan':'塔吉克斯坦',
+							'Turkmenistan':'土库曼斯坦',
+							'East Timor':'东帝汶',
+							'Trinidad and Tobago':'特里尼达和多巴哥',
+							'Tunisia':'突尼斯',
+							'Turkey':'土耳其',
+							'United Republic of Tanzania':'坦桑尼亚联合共和国',
+							'Uganda':'乌干达',
+							'Ukraine':'乌克兰',
+							'Uruguay':'乌拉圭',
+							'United States of America':'美国',
+							'Uzbekistan':'乌兹别克斯坦',
+							'Venezuela':'委内瑞拉',
+							'Vietnam':'越南',
+							'Vanuatu':'瓦努阿图',
+							'West Bank':'西岸',
+							'Yemen':'也门',
+							'South Africa':'南非',
+							'Zambia':'赞比亚',
+							'Zimbabwe':'津巴布韦'
+						}
+					}
+				]
+			};
+			var ecConfig = require('echarts/config');
+			myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param){
+				var selected = param.selected;
+				var str = '当前选择： ';
+				for (var p in selected) {
+					if (selected[p]) {
+						str += p + ' ';
+					}
+				}
+				document.getElementById('wrong-message').innerHTML = str;
+			})
+								
+				
+				
+				
+				//end of option
+				myChart.setOption(option);
+			}
+		
+		);
+                    	
+	
+	</script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

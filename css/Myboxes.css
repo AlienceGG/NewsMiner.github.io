@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.content_box{
+	margin:0 auto;
+	width:960px;
+	padding:0;
+}
+
+div.left_box{
+	margin:10px;
+	padding:5px;
+	border-style:dotted;
+	width:530px;
+	float:left;
+}
+
+div.right_box{
+	margin:10px;
+	padding:5px;
+	border-style:dotted;
+	width:390px;
+	float:right;
+}
+
+div.search_result{
+	border-top-style:groove;
+	border-top-width:thin;
+	padding:5px;
+	margin:5px 0;
+}
+
+div.search_result > h2{
+	text-align:center;
+}
+
+
+
+
+

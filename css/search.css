@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.search{
+	padding:5px;
+	margin:0 auto;
+	text-align:center;
+}
+
+div.search_row{
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
+}
+
+
+
+

@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.Homepanel{
+	margin:0;
+	padding:20px;
+}
+
+div.hot_topics a{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:5px 10px;
+	font-size:22px;
+}
+
+div.hot_regimes{
+	margin:0;
+	padding:5px 10px;
+	width:100%;
+}
+
+div.regime{
+	margin:10px;
+	width:148px;
+	float:left;
+}
+
+div.regime a img {
+	padding:0 10px;
+	height:128px;
+}
+
+div.regime p{
+	width:100%;
+	text-align:center;
+	margin:0;
+	padding-top:10px;
+}
