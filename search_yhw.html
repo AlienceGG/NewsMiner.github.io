@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>News Miner - a tool for analyzing</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <link href="css/logo.css" rel="stylesheet" type="text/css" />
+    <link href="css/user.css" rel="stylesheet" type="text/css" />
+    <link href="css/search_yhw.css" rel="stylesheet" type="text/css" />
+    <link href="css/panels.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="css/Myboxes.css" rel="stylesheet" type="text/css" />
+    <link href="css/buttons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/vertical_timeline_components.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/Mycarousel.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+	<script data-require-id="echarts/chart/line" src="./ECharts · Example_files/line.js" async=""></script>
+	<script data-require-id="echarts/chart/bar" src="./ECharts · Example_files/bar.js" async=""></script>
+	<script data-require-id="echarts/chart/scatter" src="./ECharts · Example_files/scatter.js" async=""></script>
+	<script data-require-id="echarts/chart/k" src="./ECharts · Example_files/k.js" async=""></script>
+	<script data-require-id="echarts/chart/pie" src="./ECharts · Example_files/pie.js" async=""></script>
+	<script data-require-id="echarts/chart/radar" src="./ECharts · Example_files/radar.js" async=""></script>
+	<script data-require-id="echarts/chart/force" src="./ECharts · Example_files/force.js" async=""></script>
+	<script data-require-id="echarts/chart/chord" src="./ECharts · Example_files/chord.js" async=""></script>
+	<script data-require-id="echarts/chart/gauge" src="./ECharts · Example_files/gauge.js" async=""></script>
+	<script data-require-id="echarts/chart/funnel" src="./ECharts · Example_files/funnel.js" async=""></script>
+	<script data-require-id="echarts/chart/eventRiver" src="./ECharts · Example_files/eventRiver.js" async=""></script>
+	<script data-require-id="echarts/chart/venn" src="./ECharts · Example_files/venn.js" async=""></script>
+	<script data-require-id="echarts/chart/treemap" src="./ECharts · Example_files/treemap.js" async=""></script>
+	<script data-require-id="echarts/chart/tree" src="./ECharts · Example_files/tree.js" async=""></script>
+	<script data-require-id="echarts/chart/wordCloud" src="./ECharts · Example_files/wordCloud.js" async=""></script>
+	<script data-require-id="echarts/chart/heatmap" src="./ECharts · Example_files/heatmap.js" async=""></script>
+	<script data-require-id="echarts/chart/map" src="./ECharts · Example_files/map.js" async=""></script>
+    
+	<!--script require  -->  
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">News Miner</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="search.html">Search</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+              <h1 class="page-header">Searching Page <small>search everything you want</small></h1>
+              <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Searching Page</li>
+              </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+		<div class="row">
+		  	<div class="col-md-12">
+                <!-- Blog Search Well -->
+                <div class="well">
+                      <h4>Search here</h4>
+                      <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" placeholder="search countries/regimes/topics">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                            </span>
+                      </div>
+                      <!-- /.input-group -->
+                </div>
+
+              <!-- Blog Categories Well -->
+                
+              <!-- Side Widget Well -->
+            </div>        
+        </div>
+        
+        
+       <div class="row">
+        	<div class="col-lg-12" style="margin:20px 0 10px 0;">
+            	<div class="col-lg-5 research_heading">Displaying results 1-10 of <span id="result_sum"> </span> for 
+                    <span id="keyword"></span> 
+                </div>
+               	<div class="col-lg-7">
+                	<!-- Split button -->
+                    <div class="btn-group" style="float:right;margin:0 0 0 20px;">
+                      	<button type="button" class="btn btn-default">Time</button>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Time</a></li>
+                            <li><a href="#">Other way</a></li>
+                            <li><a href="#">Something else way</a></li>
+                        </ul>
+                    </div>
+                    <span style="color:inherit; float:right">Sort by</span>
+                </div>
+           </div>     
+       </div>
+       
+       
+       <div class="container search_results">
+           <!--Project One-->
+       	   <div class="row">
+           	    <div class="result_for_research col-lg-12">
+                	<a href="#" style="float:left;">
+                    	<img id="search_item1_img" class="img-responsive img-hover" src="" alt="">
+                    </a>
+                    <h1 id="search_item1_heading"><a href="#">Heading</a></h1>
+                    <h6>
+                    	<span id="search_item1_time" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    </h6>
+                    <p id="search_item1_mainidea" style="font-size:large;">
+                    </p>
+                </div>
+           </div>
+           <!--Project Two-->
+           <div class="row">
+                <div class="result_for_research col-lg-12">
+                    <a href="#" style="float:left;">
+                        <img id="search_item2_img" class="img-responsive img-hover" src="" alt="">
+                    </a>
+                    <h1 id="search_item2_heading"><a href="#"></a></h1>
+                    <h6>
+                        <span id="search_item2_time" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    </h6>
+                    <p id="search_item2_mainidea" style="font-size:large;">
+                    </p>
+                </div>
+           </div>
+           <!--Project Three-->
+           <div class="row">
+                <div class="result_for_research col-lg-12">
+                    <a href="#" style="float:left;">
+                        <img id="search_item3_img" class="img-responsive img-hover" src="" alt="">
+                    </a>
+                    <h1 id="search_item3_heading"><a href="#"></a></h1>
+                    <h6>
+                        <span id="search_item3_time" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    </h6>
+                    <p id="search_item3_mainidea" style="font-size:large;">
+                    </p>
+                </div>
+           </div>
+           <!--Project Four-->
+           <div class="row">
+                <div class="result_for_research col-lg-12">
+                    <a href="#" style="float:left;">
+                        <img id="search_item4_img" class="img-responsive img-hover" src="" alt="">
+                    </a>
+                    <h1 id="search_item4_heading"><a href="#"></a></h1>
+                    <h6>
+                        <span id="search_item4_time" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    </h6>
+                    <p id="search_item4_mainidea" style="font-size:large;">
+                    </p>
+                </div>
+           </div>
+           <!--Project Five-->
+           <div class="row">
+                <div class="result_for_research col-lg-12">
+                    <a href="#" style="float:left;">
+                        <img id="search_item5_img" class="img-responsive img-hover" src="" alt="">
+                    </a>
+                    <h1 id="search_item5_heading"><a href="#"></a></h1>
+                    <h6>
+                        <span id="search_item5_time" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    </h6>
+                    <p id="search_item5_mainidea" style="font-size:large;">
+                    </p>
+                </div>
+           </div>
+           <!--Project Six-->
+           <div class="row">
+                <div class="result_for_research col-lg-12">
+                    <a href="#" style="float:left;">
+                        <img id="search_item6_img" class="img-responsive img-hover" src="" alt="">
+                    </a>
+                    <h1 id="search_item6_heading"><a href="#"></a></h1>
+                    <h6>
+                        <span id="search_item6_time" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    </h6>
+                    <p id="search_item6_mainidea" style="font-size:large;">
+                    </p>
+                </div>
+           </div>
+           <!--Project Seven-->
+           <div class="row">
+                <div class="result_for_research col-lg-12">
+                    <a href="#" style="float:left;">
+                        <img id="search_item7_img" class="img-responsive img-hover" src="" alt="">
+                    </a>
+                    <h1 id="search_item7_heading"><a href="#"></a></h1>
+                    <h6>
+                        <span id="search_item7_time" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    </h6>
+                    <p id="search_item7_mainidea" style="font-size:large;">
+                    </p>
+                </div>
+           </div>
+           <!--Project Eight-->
+           <div class="row">
+                <div class="result_for_research col-lg-12">
+                    <a href="#" style="float:left;">
+                        <img id="search_item8_img" class="img-responsive img-hover" src="" alt="">
+                    </a>
+                    <h1 id="search_item8_heading"><a href="#"></a></h1>
+                    <h6>
+                        <span id="search_item8_time" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    </h6>
+                    <p id="search_item8_mainidea" style="font-size:large;">
+                    </p>
+                </div>
+           </div>
+           <!--Project Nine-->
+           <div class="row">
+                <div class="result_for_research col-lg-12">
+                    <a href="#" style="float:left;">
+                        <img id="search_item9_img" class="img-responsive img-hover" src="" alt="">
+                    </a>
+                    <h1 id="search_item9_heading"><a href="#"></a></h1>
+                    <h6>
+                        <span id="search_item9_time" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    </h6>
+                    <p id="search_item9_mainidea" style="font-size:large;">
+                    </p>
+                </div>
+           </div>
+           <!--Project Ten-->
+           <div class="row">
+                <div class="result_for_research col-lg-12">
+                    <a href="#" style="float:left;">
+                        <img id="search_item10_img" class="img-responsive img-hover" src="" alt="">
+                    </a>
+                    <h1 id="search_item10_heading"><a href="#"></a></h1>
+                    <h6>
+                        <span id="search_item10_time" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    </h6>
+                    <p id="search_item10_mainidea" style="font-size:large;">
+                    </p>
+                </div>
+           </div>
+
+       </div>
+                    
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">6</a>
+                    </li>
+                    <li>
+                        <a href="#">7</a>
+                    </li>
+                    <li>
+                        <a href="#">8</a>
+                    </li>
+                    <li>
+                        <a href="#">9</a>
+                    </li>
+                    <li>
+                        <a href="#">10</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->            		
+        
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2015 © NewsMiner.All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+              
+        
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--Search_yhw.js-->
+    <script type="text/JavaScript">
+        var search_result_obj=
+        {
+            "search_sum":"11111",
+            "search_item":[
+            {
+             "img":"images/item1.png",   
+             "heading":"Heading1_WAR",
+             "time":"13:37 PM, Sep 24, 2015",
+             "mainidea":"WAR_Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach."
+            },
+            {
+             "img":"images/item2.png",    
+             "heading":"Heading2",
+             "time":"13:33 PM, Sep 25, 2015",
+             "mainidea":"Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach."
+            },
+            {
+             "img":"images/item3.png",    
+             "heading":"Heading3",
+             "time":"13:33 PM, Sep 25, 2015",
+             "mainidea":"Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach."
+            },
+            {
+             "img":"images/item4.png",    
+             "heading":"Heading4",
+             "time":"13:33 PM, Sep 25, 2015",
+             "mainidea":"Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach."
+            },
+            {
+             "img":"images/item5.png",    
+             "heading":"Heading5",
+             "time":"13:33 PM, Sep 25, 2015",
+             "mainidea":"Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach."
+            },
+            {
+             "img":"images/item6.png",    
+             "heading":"Heading6",
+             "time":"13:33 PM, Sep 25, 2015",
+             "mainidea":"Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach."
+            },
+            {
+             "img":"images/item7.png",    
+             "heading":"Heading7",
+             "time":"13:33 PM, Sep 25, 2015",
+             "mainidea":"Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach."
+            },
+            {
+             "img":"images/item8.png",    
+             "heading":"Heading8",
+             "time":"13:33 PM, Sep 25, 2015",
+             "mainidea":"Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach."
+            },
+            {
+             "img":"images/item9.png",    
+             "heading":"Heading9",
+             "time":"13:33 PM, Sep 25, 2015",
+             "mainidea":"Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach."
+            },
+            {
+             "img":"images/item10.png",    
+             "heading":"Heading10",
+             "time":"13:33 PM, Sep 25, 2015",
+             "mainidea":"Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach."
+            }
+            ]
+        };
+
+        document.getElementById("result_sum").innerHTML=search_result_obj.search_sum
+
+        for(i=1;i<=10;i++){
+            document.getElementById("search_item"+i+"_img").src=search_result_obj.search_item[i-1].img
+            document.getElementById("search_item"+i+"_heading").innerHTML=search_result_obj.search_item[i-1].heading
+            document.getElementById("search_item"+i+"_time").innerHTML=search_result_obj.search_item[i-1].time
+            document.getElementById("search_item"+i+"_mainidea").innerHTML=search_result_obj.search_item[i-1].mainidea
+        }
+
+    </script>    
+    
+</body>        
+       
+        
+
+
+</html>       

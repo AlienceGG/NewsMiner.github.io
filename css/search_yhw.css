@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.search{
+	padding:5px;
+	margin:0 auto;
+	text-align:center;
+}
+
+div.search_row{
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
+}
+
+div.result_for_research a img{
+	height:100px;
+	width:150px;
+	padding-right:20px;
+	padding-bottom:20px;
+}
+
